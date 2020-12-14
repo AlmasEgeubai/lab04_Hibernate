@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 17, 2020 12:29:09 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="book" name="pojos.book" optimistic-lock="version" table="notebook">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="date" type="string">
+      <column length="15" name="date" not-null="true"/>
+    </property>
+    <property name="name" type="string">
+      <column length="11" name="name"/>
+    </property>
+    <property name="city" type="string">
+      <column length="45" name="city"/>
+    </property>
+    <property name="num" type="string">
+      <column length="20" name="num"/>
+    </property>
+  </class>
+</hibernate-mapping>
